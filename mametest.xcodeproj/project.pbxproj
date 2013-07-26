@@ -280,6 +280,7 @@
 		F82929CE17A29C3700927C03 /* libwebsockets.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F82929CD17A29C3700927C03 /* libwebsockets.a */; };
 		F82929D417A29C3700927C03 /* AppDelegate.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F82929D317A29C3700927C03 /* AppDelegate.cpp */; };
 		F82929D717A29C3700927C03 /* HelloWorldScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F82929D617A29C3700927C03 /* HelloWorldScene.cpp */; };
+		F82929DF17A29D3800927C03 /* GameScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F82929DE17A29D3800927C03 /* GameScene.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -873,6 +874,8 @@
 		F82929D317A29C3700927C03 /* AppDelegate.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = AppDelegate.cpp; path = Classes/AppDelegate.cpp; sourceTree = "<group>"; };
 		F82929D517A29C3700927C03 /* HelloWorldScene.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = HelloWorldScene.h; path = Classes/HelloWorldScene.h; sourceTree = "<group>"; };
 		F82929D617A29C3700927C03 /* HelloWorldScene.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = HelloWorldScene.cpp; path = Classes/HelloWorldScene.cpp; sourceTree = "<group>"; };
+		F82929DD17A29D2000927C03 /* GameScene.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = GameScene.h; path = "../../../../cocos2d-x-2.1.4/projects/nyangame/Classes/GameScene.h"; sourceTree = "<group>"; };
+		F82929DE17A29D3800927C03 /* GameScene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = GameScene.cpp; path = "../../../../cocos2d-x-2.1.4/projects/nyangame/Classes/GameScene.cpp"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -2095,6 +2098,8 @@
 			children = (
 				F82929D217A29C3700927C03 /* AppDelegate.h */,
 				F82929D317A29C3700927C03 /* AppDelegate.cpp */,
+				F82929DD17A29D2000927C03 /* GameScene.h */,
+				F82929DE17A29D3800927C03 /* GameScene.cpp */,
 				F82929D517A29C3700927C03 /* HelloWorldScene.h */,
 				F82929D617A29C3700927C03 /* HelloWorldScene.cpp */,
 			);
@@ -2423,6 +2428,7 @@
 				F82929C617A29C3700927C03 /* cpVect.c in Sources */,
 				F82929D417A29C3700927C03 /* AppDelegate.cpp in Sources */,
 				F82929D717A29C3700927C03 /* HelloWorldScene.cpp in Sources */,
+				F82929DF17A29D3800927C03 /* GameScene.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
