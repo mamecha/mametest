@@ -279,8 +279,15 @@
 		F82929C617A29C3700927C03 /* cpVect.c in Sources */ = {isa = PBXBuildFile; fileRef = F82929C517A29C3700927C03 /* cpVect.c */; };
 		F82929CE17A29C3700927C03 /* libwebsockets.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F82929CD17A29C3700927C03 /* libwebsockets.a */; };
 		F82929D417A29C3700927C03 /* AppDelegate.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F82929D317A29C3700927C03 /* AppDelegate.cpp */; };
-		F82929D717A29C3700927C03 /* HelloWorldScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F82929D617A29C3700927C03 /* HelloWorldScene.cpp */; };
 		F82929DF17A29D3800927C03 /* GameScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F82929DE17A29D3800927C03 /* GameScene.cpp */; };
+		F8D22D7117AA869900194FFC /* background.png in Resources */ = {isa = PBXBuildFile; fileRef = F8D22D7017AA869900194FFC /* background.png */; };
+		F8D22D7317AA879100194FFC /* blue.png in Resources */ = {isa = PBXBuildFile; fileRef = F8D22D7217AA879100194FFC /* blue.png */; };
+		F8D22D7517AA879C00194FFC /* gray.png in Resources */ = {isa = PBXBuildFile; fileRef = F8D22D7417AA879C00194FFC /* gray.png */; };
+		F8D22D7717AA87A200194FFC /* green.png in Resources */ = {isa = PBXBuildFile; fileRef = F8D22D7617AA87A200194FFC /* green.png */; };
+		F8D22D7917AA87A600194FFC /* red.png in Resources */ = {isa = PBXBuildFile; fileRef = F8D22D7817AA87A600194FFC /* red.png */; };
+		F8D22D7B17AA87BC00194FFC /* yellow.png in Resources */ = {isa = PBXBuildFile; fileRef = F8D22D7A17AA87BC00194FFC /* yellow.png */; };
+		F8D22D7E17AA880000194FFC /* Config.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F8D22D7C17AA880000194FFC /* Config.cpp */; };
+		F8D22D8117AA88D900194FFC /* BlockSprite.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F8D22D7F17AA88D900194FFC /* BlockSprite.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -872,10 +879,18 @@
 		F82929D017A29C3700927C03 /* Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Prefix.pch; sourceTree = "<group>"; };
 		F82929D217A29C3700927C03 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = Classes/AppDelegate.h; sourceTree = "<group>"; };
 		F82929D317A29C3700927C03 /* AppDelegate.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = AppDelegate.cpp; path = Classes/AppDelegate.cpp; sourceTree = "<group>"; };
-		F82929D517A29C3700927C03 /* HelloWorldScene.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = HelloWorldScene.h; path = Classes/HelloWorldScene.h; sourceTree = "<group>"; };
-		F82929D617A29C3700927C03 /* HelloWorldScene.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = HelloWorldScene.cpp; path = Classes/HelloWorldScene.cpp; sourceTree = "<group>"; };
 		F82929DD17A29D2000927C03 /* GameScene.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = GameScene.h; path = "../../../../cocos2d-x-2.1.4/projects/nyangame/Classes/GameScene.h"; sourceTree = "<group>"; };
 		F82929DE17A29D3800927C03 /* GameScene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = GameScene.cpp; path = "../../../../cocos2d-x-2.1.4/projects/nyangame/Classes/GameScene.cpp"; sourceTree = "<group>"; };
+		F8D22D7017AA869900194FFC /* background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = background.png; path = ../../../../Desktop/resources/background.png; sourceTree = "<group>"; };
+		F8D22D7217AA879100194FFC /* blue.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = blue.png; path = ../../../../Desktop/resources/blue.png; sourceTree = "<group>"; };
+		F8D22D7417AA879C00194FFC /* gray.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = gray.png; path = ../../../../Desktop/resources/gray.png; sourceTree = "<group>"; };
+		F8D22D7617AA87A200194FFC /* green.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = green.png; path = ../../../../Desktop/resources/green.png; sourceTree = "<group>"; };
+		F8D22D7817AA87A600194FFC /* red.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = red.png; path = ../../../../Desktop/resources/red.png; sourceTree = "<group>"; };
+		F8D22D7A17AA87BC00194FFC /* yellow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = yellow.png; path = ../../../../Desktop/resources/yellow.png; sourceTree = "<group>"; };
+		F8D22D7C17AA880000194FFC /* Config.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Config.cpp; sourceTree = "<group>"; };
+		F8D22D7D17AA880000194FFC /* Config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Config.h; sourceTree = "<group>"; };
+		F8D22D7F17AA88D900194FFC /* BlockSprite.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BlockSprite.cpp; sourceTree = "<group>"; };
+		F8D22D8017AA88D900194FFC /* BlockSprite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BlockSprite.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -952,11 +967,17 @@
 				F829264617A29C3200927C03 /* Default.png */,
 				F829264817A29C3200927C03 /* HelloWorld.png */,
 				F829264A17A29C3200927C03 /* Icon-72.png */,
+				F8D22D7017AA869900194FFC /* background.png */,
 				F829264C17A29C3200927C03 /* Icon-Small-50.png */,
 				F829264E17A29C3200927C03 /* Icon-Small.png */,
 				F829265017A29C3200927C03 /* Icon-Small@2x.png */,
+				F8D22D7617AA87A200194FFC /* green.png */,
+				F8D22D7817AA87A600194FFC /* red.png */,
+				F8D22D7417AA879C00194FFC /* gray.png */,
 				F829265217A29C3200927C03 /* Icon.png */,
+				F8D22D7217AA879100194FFC /* blue.png */,
 				F829265417A29C3200927C03 /* Icon@2x.png */,
+				F8D22D7A17AA87BC00194FFC /* yellow.png */,
 				F829265617A29C3200927C03 /* iTunesArtwork */,
 				F829265817A29C3200927C03 /* Info.plist */,
 			);
@@ -2100,8 +2121,10 @@
 				F82929D317A29C3700927C03 /* AppDelegate.cpp */,
 				F82929DD17A29D2000927C03 /* GameScene.h */,
 				F82929DE17A29D3800927C03 /* GameScene.cpp */,
-				F82929D517A29C3700927C03 /* HelloWorldScene.h */,
-				F82929D617A29C3700927C03 /* HelloWorldScene.cpp */,
+				F8D22D7F17AA88D900194FFC /* BlockSprite.cpp */,
+				F8D22D8017AA88D900194FFC /* BlockSprite.h */,
+				F8D22D7C17AA880000194FFC /* Config.cpp */,
+				F8D22D7D17AA880000194FFC /* Config.h */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -2169,6 +2192,12 @@
 				F829265717A29C3200927C03 /* iTunesArtwork in Resources */,
 				F82926F617A29C3300927C03 /* ChangeLog in Resources */,
 				F829286A17A29C3500927C03 /* project.pbxproj in Resources */,
+				F8D22D7117AA869900194FFC /* background.png in Resources */,
+				F8D22D7317AA879100194FFC /* blue.png in Resources */,
+				F8D22D7517AA879C00194FFC /* gray.png in Resources */,
+				F8D22D7717AA87A200194FFC /* green.png in Resources */,
+				F8D22D7917AA87A600194FFC /* red.png in Resources */,
+				F8D22D7B17AA87BC00194FFC /* yellow.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2427,8 +2456,9 @@
 				F82929C417A29C3700927C03 /* cpSweep1D.c in Sources */,
 				F82929C617A29C3700927C03 /* cpVect.c in Sources */,
 				F82929D417A29C3700927C03 /* AppDelegate.cpp in Sources */,
-				F82929D717A29C3700927C03 /* HelloWorldScene.cpp in Sources */,
 				F82929DF17A29D3800927C03 /* GameScene.cpp in Sources */,
+				F8D22D7E17AA880000194FFC /* Config.cpp in Sources */,
+				F8D22D8117AA88D900194FFC /* BlockSprite.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2570,6 +2600,7 @@
 				F82929DC17A29C3700927C03 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
