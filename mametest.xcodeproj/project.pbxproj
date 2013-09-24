@@ -279,7 +279,7 @@
 		F82929C617A29C3700927C03 /* cpVect.c in Sources */ = {isa = PBXBuildFile; fileRef = F82929C517A29C3700927C03 /* cpVect.c */; };
 		F82929CE17A29C3700927C03 /* libwebsockets.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F82929CD17A29C3700927C03 /* libwebsockets.a */; };
 		F82929D417A29C3700927C03 /* AppDelegate.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F82929D317A29C3700927C03 /* AppDelegate.cpp */; };
-		F82929DF17A29D3800927C03 /* GameScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F82929DE17A29D3800927C03 /* GameScene.cpp */; };
+		F8818B3A17F153C30092240D /* GameScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F8818B3817F153C30092240D /* GameScene.cpp */; };
 		F8D22D7117AA869900194FFC /* background.png in Resources */ = {isa = PBXBuildFile; fileRef = F8D22D7017AA869900194FFC /* background.png */; };
 		F8D22D7317AA879100194FFC /* blue.png in Resources */ = {isa = PBXBuildFile; fileRef = F8D22D7217AA879100194FFC /* blue.png */; };
 		F8D22D7517AA879C00194FFC /* gray.png in Resources */ = {isa = PBXBuildFile; fileRef = F8D22D7417AA879C00194FFC /* gray.png */; };
@@ -879,8 +879,8 @@
 		F82929D017A29C3700927C03 /* Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Prefix.pch; sourceTree = "<group>"; };
 		F82929D217A29C3700927C03 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = Classes/AppDelegate.h; sourceTree = "<group>"; };
 		F82929D317A29C3700927C03 /* AppDelegate.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = AppDelegate.cpp; path = Classes/AppDelegate.cpp; sourceTree = "<group>"; };
-		F82929DD17A29D2000927C03 /* GameScene.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = GameScene.h; path = "../../../../cocos2d-x-2.1.4/projects/nyangame/Classes/GameScene.h"; sourceTree = "<group>"; };
-		F82929DE17A29D3800927C03 /* GameScene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = GameScene.cpp; path = "../../../../cocos2d-x-2.1.4/projects/nyangame/Classes/GameScene.cpp"; sourceTree = "<group>"; };
+		F8818B3817F153C30092240D /* GameScene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = GameScene.cpp; path = Classes/GameScene.cpp; sourceTree = "<group>"; };
+		F8818B3917F153C30092240D /* GameScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GameScene.h; path = Classes/GameScene.h; sourceTree = "<group>"; };
 		F8D22D7017AA869900194FFC /* background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = background.png; path = ../../../../Desktop/resources/background.png; sourceTree = "<group>"; };
 		F8D22D7217AA879100194FFC /* blue.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = blue.png; path = ../../../../Desktop/resources/blue.png; sourceTree = "<group>"; };
 		F8D22D7417AA879C00194FFC /* gray.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = gray.png; path = ../../../../Desktop/resources/gray.png; sourceTree = "<group>"; };
@@ -2119,8 +2119,8 @@
 			children = (
 				F82929D217A29C3700927C03 /* AppDelegate.h */,
 				F82929D317A29C3700927C03 /* AppDelegate.cpp */,
-				F82929DD17A29D2000927C03 /* GameScene.h */,
-				F82929DE17A29D3800927C03 /* GameScene.cpp */,
+				F8818B3817F153C30092240D /* GameScene.cpp */,
+				F8818B3917F153C30092240D /* GameScene.h */,
 				F8D22D7F17AA88D900194FFC /* BlockSprite.cpp */,
 				F8D22D8017AA88D900194FFC /* BlockSprite.h */,
 				F8D22D7C17AA880000194FFC /* Config.cpp */,
@@ -2422,6 +2422,7 @@
 				F829295517A29C3600927C03 /* Skeleton.cpp in Sources */,
 				F829295817A29C3600927C03 /* SkeletonData.cpp in Sources */,
 				F829295B17A29C3600927C03 /* SkeletonJson.cpp in Sources */,
+				F8818B3A17F153C30092240D /* GameScene.cpp in Sources */,
 				F829295E17A29C3600927C03 /* Skin.cpp in Sources */,
 				F829296117A29C3600927C03 /* Slot.cpp in Sources */,
 				F829296417A29C3600927C03 /* SlotData.cpp in Sources */,
@@ -2456,7 +2457,6 @@
 				F82929C417A29C3700927C03 /* cpSweep1D.c in Sources */,
 				F82929C617A29C3700927C03 /* cpVect.c in Sources */,
 				F82929D417A29C3700927C03 /* AppDelegate.cpp in Sources */,
-				F82929DF17A29D3800927C03 /* GameScene.cpp in Sources */,
 				F8D22D7E17AA880000194FFC /* Config.cpp in Sources */,
 				F8D22D8117AA88D900194FFC /* BlockSprite.cpp in Sources */,
 			);
