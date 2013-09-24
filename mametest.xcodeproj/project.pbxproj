@@ -280,6 +280,28 @@
 		F82929CE17A29C3700927C03 /* libwebsockets.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F82929CD17A29C3700927C03 /* libwebsockets.a */; };
 		F82929D417A29C3700927C03 /* AppDelegate.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F82929D317A29C3700927C03 /* AppDelegate.cpp */; };
 		F8818B3A17F153C30092240D /* GameScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F8818B3817F153C30092240D /* GameScene.cpp */; };
+		F8818B5117F1B32C0092240D /* background.png in Resources */ = {isa = PBXBuildFile; fileRef = F8818B3B17F1B32C0092240D /* background.png */; };
+		F8818B5217F1B32C0092240D /* blue.png in Resources */ = {isa = PBXBuildFile; fileRef = F8818B3C17F1B32C0092240D /* blue.png */; };
+		F8818B5317F1B32C0092240D /* blueFont.fnt in Resources */ = {isa = PBXBuildFile; fileRef = F8818B3D17F1B32C0092240D /* blueFont.fnt */; };
+		F8818B5417F1B32C0092240D /* blueFont.png in Resources */ = {isa = PBXBuildFile; fileRef = F8818B3E17F1B32C0092240D /* blueFont.png */; };
+		F8818B5517F1B32C0092240D /* gameover.png in Resources */ = {isa = PBXBuildFile; fileRef = F8818B3F17F1B32C0092240D /* gameover.png */; };
+		F8818B5617F1B32C0092240D /* gray.png in Resources */ = {isa = PBXBuildFile; fileRef = F8818B4017F1B32C0092240D /* gray.png */; };
+		F8818B5717F1B32C0092240D /* grayFont.fnt in Resources */ = {isa = PBXBuildFile; fileRef = F8818B4117F1B32C0092240D /* grayFont.fnt */; };
+		F8818B5817F1B32C0092240D /* grayFont.png in Resources */ = {isa = PBXBuildFile; fileRef = F8818B4217F1B32C0092240D /* grayFont.png */; };
+		F8818B5917F1B32C0092240D /* green.png in Resources */ = {isa = PBXBuildFile; fileRef = F8818B4317F1B32C0092240D /* green.png */; };
+		F8818B5A17F1B32C0092240D /* greenFont.fnt in Resources */ = {isa = PBXBuildFile; fileRef = F8818B4417F1B32C0092240D /* greenFont.fnt */; };
+		F8818B5B17F1B32C0092240D /* greenFont.png in Resources */ = {isa = PBXBuildFile; fileRef = F8818B4517F1B32C0092240D /* greenFont.png */; };
+		F8818B5C17F1B32C0092240D /* red.png in Resources */ = {isa = PBXBuildFile; fileRef = F8818B4617F1B32C0092240D /* red.png */; };
+		F8818B5D17F1B32C0092240D /* redFont.fnt in Resources */ = {isa = PBXBuildFile; fileRef = F8818B4717F1B32C0092240D /* redFont.fnt */; };
+		F8818B5E17F1B32C0092240D /* redFont.png in Resources */ = {isa = PBXBuildFile; fileRef = F8818B4817F1B32C0092240D /* redFont.png */; };
+		F8818B5F17F1B32C0092240D /* removeBlock.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F8818B4917F1B32C0092240D /* removeBlock.mp3 */; };
+		F8818B6017F1B32C0092240D /* reset1.png in Resources */ = {isa = PBXBuildFile; fileRef = F8818B4A17F1B32C0092240D /* reset1.png */; };
+		F8818B6117F1B32C0092240D /* reset2.png in Resources */ = {isa = PBXBuildFile; fileRef = F8818B4B17F1B32C0092240D /* reset2.png */; };
+		F8818B6217F1B32C0092240D /* whiteFont.fnt in Resources */ = {isa = PBXBuildFile; fileRef = F8818B4C17F1B32C0092240D /* whiteFont.fnt */; };
+		F8818B6317F1B32C0092240D /* whiteFont.png in Resources */ = {isa = PBXBuildFile; fileRef = F8818B4D17F1B32C0092240D /* whiteFont.png */; };
+		F8818B6417F1B32C0092240D /* yellow.png in Resources */ = {isa = PBXBuildFile; fileRef = F8818B4E17F1B32C0092240D /* yellow.png */; };
+		F8818B6517F1B32C0092240D /* yellowFont.fnt in Resources */ = {isa = PBXBuildFile; fileRef = F8818B4F17F1B32C0092240D /* yellowFont.fnt */; };
+		F8818B6617F1B32C0092240D /* yellowFont.png in Resources */ = {isa = PBXBuildFile; fileRef = F8818B5017F1B32C0092240D /* yellowFont.png */; };
 		F8D22D7117AA869900194FFC /* background.png in Resources */ = {isa = PBXBuildFile; fileRef = F8D22D7017AA869900194FFC /* background.png */; };
 		F8D22D7317AA879100194FFC /* blue.png in Resources */ = {isa = PBXBuildFile; fileRef = F8D22D7217AA879100194FFC /* blue.png */; };
 		F8D22D7517AA879C00194FFC /* gray.png in Resources */ = {isa = PBXBuildFile; fileRef = F8D22D7417AA879C00194FFC /* gray.png */; };
@@ -881,6 +903,28 @@
 		F82929D317A29C3700927C03 /* AppDelegate.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = AppDelegate.cpp; path = Classes/AppDelegate.cpp; sourceTree = "<group>"; };
 		F8818B3817F153C30092240D /* GameScene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = GameScene.cpp; path = Classes/GameScene.cpp; sourceTree = "<group>"; };
 		F8818B3917F153C30092240D /* GameScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GameScene.h; path = Classes/GameScene.h; sourceTree = "<group>"; };
+		F8818B3B17F1B32C0092240D /* background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = background.png; path = Resources/background.png; sourceTree = "<group>"; };
+		F8818B3C17F1B32C0092240D /* blue.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = blue.png; path = Resources/blue.png; sourceTree = "<group>"; };
+		F8818B3D17F1B32C0092240D /* blueFont.fnt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = blueFont.fnt; path = Resources/blueFont.fnt; sourceTree = "<group>"; };
+		F8818B3E17F1B32C0092240D /* blueFont.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = blueFont.png; path = Resources/blueFont.png; sourceTree = "<group>"; };
+		F8818B3F17F1B32C0092240D /* gameover.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = gameover.png; path = Resources/gameover.png; sourceTree = "<group>"; };
+		F8818B4017F1B32C0092240D /* gray.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = gray.png; path = Resources/gray.png; sourceTree = "<group>"; };
+		F8818B4117F1B32C0092240D /* grayFont.fnt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = grayFont.fnt; path = Resources/grayFont.fnt; sourceTree = "<group>"; };
+		F8818B4217F1B32C0092240D /* grayFont.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = grayFont.png; path = Resources/grayFont.png; sourceTree = "<group>"; };
+		F8818B4317F1B32C0092240D /* green.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = green.png; path = Resources/green.png; sourceTree = "<group>"; };
+		F8818B4417F1B32C0092240D /* greenFont.fnt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = greenFont.fnt; path = Resources/greenFont.fnt; sourceTree = "<group>"; };
+		F8818B4517F1B32C0092240D /* greenFont.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = greenFont.png; path = Resources/greenFont.png; sourceTree = "<group>"; };
+		F8818B4617F1B32C0092240D /* red.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = red.png; path = Resources/red.png; sourceTree = "<group>"; };
+		F8818B4717F1B32C0092240D /* redFont.fnt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = redFont.fnt; path = Resources/redFont.fnt; sourceTree = "<group>"; };
+		F8818B4817F1B32C0092240D /* redFont.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = redFont.png; path = Resources/redFont.png; sourceTree = "<group>"; };
+		F8818B4917F1B32C0092240D /* removeBlock.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = removeBlock.mp3; path = Resources/removeBlock.mp3; sourceTree = "<group>"; };
+		F8818B4A17F1B32C0092240D /* reset1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = reset1.png; path = Resources/reset1.png; sourceTree = "<group>"; };
+		F8818B4B17F1B32C0092240D /* reset2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = reset2.png; path = Resources/reset2.png; sourceTree = "<group>"; };
+		F8818B4C17F1B32C0092240D /* whiteFont.fnt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = whiteFont.fnt; path = Resources/whiteFont.fnt; sourceTree = "<group>"; };
+		F8818B4D17F1B32C0092240D /* whiteFont.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = whiteFont.png; path = Resources/whiteFont.png; sourceTree = "<group>"; };
+		F8818B4E17F1B32C0092240D /* yellow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = yellow.png; path = Resources/yellow.png; sourceTree = "<group>"; };
+		F8818B4F17F1B32C0092240D /* yellowFont.fnt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = yellowFont.fnt; path = Resources/yellowFont.fnt; sourceTree = "<group>"; };
+		F8818B5017F1B32C0092240D /* yellowFont.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = yellowFont.png; path = Resources/yellowFont.png; sourceTree = "<group>"; };
 		F8D22D7017AA869900194FFC /* background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = background.png; path = ../../../../Desktop/resources/background.png; sourceTree = "<group>"; };
 		F8D22D7217AA879100194FFC /* blue.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = blue.png; path = ../../../../Desktop/resources/blue.png; sourceTree = "<group>"; };
 		F8D22D7417AA879C00194FFC /* gray.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = gray.png; path = ../../../../Desktop/resources/gray.png; sourceTree = "<group>"; };
@@ -962,6 +1006,28 @@
 		F829264117A29C3200927C03 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				F8818B3B17F1B32C0092240D /* background.png */,
+				F8818B3C17F1B32C0092240D /* blue.png */,
+				F8818B3D17F1B32C0092240D /* blueFont.fnt */,
+				F8818B3E17F1B32C0092240D /* blueFont.png */,
+				F8818B3F17F1B32C0092240D /* gameover.png */,
+				F8818B4017F1B32C0092240D /* gray.png */,
+				F8818B4117F1B32C0092240D /* grayFont.fnt */,
+				F8818B4217F1B32C0092240D /* grayFont.png */,
+				F8818B4317F1B32C0092240D /* green.png */,
+				F8818B4417F1B32C0092240D /* greenFont.fnt */,
+				F8818B4517F1B32C0092240D /* greenFont.png */,
+				F8818B4617F1B32C0092240D /* red.png */,
+				F8818B4717F1B32C0092240D /* redFont.fnt */,
+				F8818B4817F1B32C0092240D /* redFont.png */,
+				F8818B4917F1B32C0092240D /* removeBlock.mp3 */,
+				F8818B4A17F1B32C0092240D /* reset1.png */,
+				F8818B4B17F1B32C0092240D /* reset2.png */,
+				F8818B4C17F1B32C0092240D /* whiteFont.fnt */,
+				F8818B4D17F1B32C0092240D /* whiteFont.png */,
+				F8818B4E17F1B32C0092240D /* yellow.png */,
+				F8818B4F17F1B32C0092240D /* yellowFont.fnt */,
+				F8818B5017F1B32C0092240D /* yellowFont.png */,
 				F829264217A29C3200927C03 /* CloseNormal.png */,
 				F829264417A29C3200927C03 /* CloseSelected.png */,
 				F829264617A29C3200927C03 /* Default.png */,
@@ -2180,24 +2246,46 @@
 			buildActionMask = 2147483647;
 			files = (
 				F829264317A29C3200927C03 /* CloseNormal.png in Resources */,
+				F8818B5117F1B32C0092240D /* background.png in Resources */,
 				F829264517A29C3200927C03 /* CloseSelected.png in Resources */,
 				F829264717A29C3200927C03 /* Default.png in Resources */,
+				F8818B6317F1B32C0092240D /* whiteFont.png in Resources */,
 				F829264917A29C3200927C03 /* HelloWorld.png in Resources */,
+				F8818B5517F1B32C0092240D /* gameover.png in Resources */,
+				F8818B5C17F1B32C0092240D /* red.png in Resources */,
+				F8818B5217F1B32C0092240D /* blue.png in Resources */,
 				F829264B17A29C3200927C03 /* Icon-72.png in Resources */,
+				F8818B5317F1B32C0092240D /* blueFont.fnt in Resources */,
+				F8818B6117F1B32C0092240D /* reset2.png in Resources */,
 				F829264D17A29C3200927C03 /* Icon-Small-50.png in Resources */,
 				F829264F17A29C3200927C03 /* Icon-Small.png in Resources */,
+				F8818B6217F1B32C0092240D /* whiteFont.fnt in Resources */,
 				F829265117A29C3200927C03 /* Icon-Small@2x.png in Resources */,
 				F829265317A29C3200927C03 /* Icon.png in Resources */,
 				F829265517A29C3200927C03 /* Icon@2x.png in Resources */,
+				F8818B5717F1B32C0092240D /* grayFont.fnt in Resources */,
+				F8818B6417F1B32C0092240D /* yellow.png in Resources */,
 				F829265717A29C3200927C03 /* iTunesArtwork in Resources */,
+				F8818B5817F1B32C0092240D /* grayFont.png in Resources */,
 				F82926F617A29C3300927C03 /* ChangeLog in Resources */,
+				F8818B5D17F1B32C0092240D /* redFont.fnt in Resources */,
+				F8818B5F17F1B32C0092240D /* removeBlock.mp3 in Resources */,
+				F8818B5E17F1B32C0092240D /* redFont.png in Resources */,
+				F8818B5B17F1B32C0092240D /* greenFont.png in Resources */,
+				F8818B5617F1B32C0092240D /* gray.png in Resources */,
+				F8818B5A17F1B32C0092240D /* greenFont.fnt in Resources */,
 				F829286A17A29C3500927C03 /* project.pbxproj in Resources */,
 				F8D22D7117AA869900194FFC /* background.png in Resources */,
+				F8818B6517F1B32C0092240D /* yellowFont.fnt in Resources */,
+				F8818B5917F1B32C0092240D /* green.png in Resources */,
 				F8D22D7317AA879100194FFC /* blue.png in Resources */,
 				F8D22D7517AA879C00194FFC /* gray.png in Resources */,
+				F8818B5417F1B32C0092240D /* blueFont.png in Resources */,
 				F8D22D7717AA87A200194FFC /* green.png in Resources */,
+				F8818B6617F1B32C0092240D /* yellowFont.png in Resources */,
 				F8D22D7917AA87A600194FFC /* red.png in Resources */,
 				F8D22D7B17AA87BC00194FFC /* yellow.png in Resources */,
+				F8818B6017F1B32C0092240D /* reset1.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
