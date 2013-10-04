@@ -59,4 +59,3 @@ const char* BlockSprite::getBlockImageFileName(kBlock blockType)
       return "";
   }
 }
-
