@@ -32,6 +32,12 @@ BlockSprite* BlockSprite::createWithBlockType(kBlock blockType)
 
 bool BlockSprite::initWithBlockType(kBlock blockType)
 {
+  if (!CCSprite::initWithFile(getBlockImageFileName(blockType))) {
+    return false;
+  }
+  
+  m_blockType = blockType;
+  
   return true;
 }
 
