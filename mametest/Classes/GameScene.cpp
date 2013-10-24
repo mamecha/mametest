@@ -72,13 +72,15 @@ void GameScene::showBlock()
       // 対応するコマ配列にタグを追加
       int tag = getTag(x, y);
       m_blockTags[blockType].push_back(tag);
+      printf("%d", tag);
+      printf(" : ");
+      printf("%d", blockType);
+      printf(" | ");
 
       // コマ作成
-      BlockSprite* pBlock = BlockSprite::createWithBlockType(blockType);
-      pBlock->setPosition(CCPoint(0,0));
-      printf("%d¥n",tag);
-      printf("%d¥n", kZOrderBlock);
-      m_background->addChild(pBlock, 0);//kZOrderBlock, tag);
+      BlockSprite* pBlock = BlockSprite::createWithBlockType(kBlockRed);
+      pBlock->setPosition(CCPoint(x, y));
+      m_background->addChild(pBlock, kZOrderBlock, tag);
     }
   }
 }
