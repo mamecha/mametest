@@ -62,9 +62,9 @@ int GameScene::getTag(int posIndexX, int posIndexY)
 void GameScene::showBlock()
 {
   // 8 * 8
-  for (int x=1; x < MAX_BLOCK_X; x++)
+  for (int x=0; x < MAX_BLOCK_X; x++)
   {
-    for (int y=1; y < MAX_BLOCK_Y; y++)
+    for (int y=0; y < MAX_BLOCK_Y; y++)
     {
       // ランダムでコマ生成
       kBlock blockType = (kBlock)(rand() % kBlockCount);
@@ -78,8 +78,8 @@ void GameScene::showBlock()
       printf(" | ");
 
       // コマ作成
-      BlockSprite* pBlock = BlockSprite::createWithBlockType(kBlockRed);
-      pBlock->setPosition(CCPoint(x, y));
+      BlockSprite* pBlock = BlockSprite::createWithBlockType(blockType);
+      pBlock->setPosition(getPosition(x, y));
       m_background->addChild(pBlock, kZOrderBlock, tag);
     }
   }
