@@ -72,10 +72,6 @@ void GameScene::showBlock()
       // 対応するコマ配列にタグを追加
       int tag = getTag(x, y);
       m_blockTags[blockType].push_back(tag);
-      printf("%d", tag);
-      printf(" : ");
-      printf("%d", blockType);
-      printf(" | ");
 
       // コマ作成
       BlockSprite* pBlock = BlockSprite::createWithBlockType(blockType);
