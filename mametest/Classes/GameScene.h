@@ -44,10 +44,19 @@ protected:
   cocos2d::CCPoint getPosition(int posIndexX, int posIndexY);
   int getTag(int PosIndexX, int posIndexY);
   
+  // 2-2-5
+  void getTouchBlockTag(cocos2d::CCPoint touchPoint, int &tag, kBlock&blockType);
+  std::list<int> getSameColorBlockTags(int baseTag, kBlock blockType);
+  void removeBlock(std::list<int> blockTags, kBlock blockType);
+  bool hasSameColorBlock(std::list<int> blockTagList, int searchBlockTag);
+  
 public:
   virtual bool init();
   static cocos2d::CCScene* scene();
   CREATE_FUNC(GameScene);
+  
+  virtual bool ccTouchBegan(cocos2d::CCTouch* ptouch, cocos2d::CCEvent* pEvent);
+  virtual void ccTouchEnded(cocos2d::CCTouch* ptouch, cocos2d::CCEvent* pEvent);
 };
 
 
