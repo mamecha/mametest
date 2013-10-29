@@ -80,6 +80,117 @@ void GameScene::showBlock()
     }
   }
 }
+bool GameScene::ccTouchBegan(CCTouch* pTouch, CCEvent* pEvent)
+{
+  return true;
+}
+// タッチイベント終了
+void GameScene::ccTouchEnded(CCTouch* pTouch, CCEvent* pEvent)
+{
+  // タップポイント取得
+  CCPoint touchPoint = m_background->convertToNodeSpace(pTouch);
+  
+  // タップしたコマのTagとコマの種類を取得
+  int tag = 0;
+  kBlock blockType;
+  getTouchBlockTag(touchPoint, tag, blockType);
+  
+  if (tag != 0){
+    // 隣接するコマを検索
+    list<int> sameColorBlockTags = getSameColorBlockTags(tag, blockType);
+    
+    if (sameColorBlockTags.size() > 1)
+    {
+      // 隣接するコマを削除
+      removeBlock(sameColorBlockTags, blockType);
+    }
+  }
+}
+// touch
+void GameScene::getTouchBlockTag(CCPoint touchPoint, int &tag, kBlock &blockType)
+{
+  for (int x = 0; x < MAX_BLOCK_X; x++)
+  {
+    for (int y = 0; y < MAX_BLOCK_Y; y++)
+    {
+      int currentTag = getTag(x, y);
+      CCNode* node = m_background->getChildByTag(currentTag);
+      if (node && node->boundingBox().containsPoint(touchPoint))
+      {
+        tag = currentTag;
+        blockType = ((BlockSprite*)node)->getBlockType();
+        
+        return;
+      }
+    }
+  }
+}
+// コマが配列にあるか検索
+bool GameScene::hasSameColorBlock(list<int> blockTagList, int searchBlockTag)
+{
+  list<int>::iterator it;
+  for (it = blockTagList.begin(); it != blockTagList.end(); ++it)
+  {
+    if (*it == searchBlockTag)
+    {
+      return true;
+    }
+  }
+  
+  return false;
+}
+// タップされたコマと同色で勝つ接しているコマの配列を返す
+list<int> GameScene::getSameColorBlockTags(int baseTag, kBlock blockType)
+{
+  // 同色のコマを格納する配列のしょきか
+  list<int> sameColorBlockTags;
+  sameColorBlockTags.push_back(baseTag);
+  
+  list<int>::iterator it = sameColorBlockTags.begin();
+  while (it != sameColorBlockTags.end())
+  {
+    int tags[] = {
+      *it +  100,// right block
+      *it - 100,//   left block
+      *it + 1,// up block
+      *it - 1, // down block
+    };
+    
+    for (int i = 0; i < sizeof(tags) / sizeof(tags[0]); i++)
+    {
+      // 既にリストがあるか検索
+      if (!hasSameColorBlock(sameColorBlockTags, tags[i]))
+      {
+        // コマ配列にあるか
+        if (!hasSameColorBlock(m_blockTags[blockType], tags[i]))
+        {
+          sameColorBlockTags.push_back(tags[i]);
+        }
+      }
+    }
+    it++;
+  }
+  return sameColorBlockTags;
+}
+// コマ削除
+void GameScene::removeBlock(list<int> blockTags, kBlock blockType)
+{
+  list<int>::iterator it = blockTags.begin();
+  while (it != blockTags.end())
+  {
+    // 既存配列から該当コマを削除
+    m_blockTags[blockType].remove(*it);
+    
+    // 対象となるコマ取得
+    CCNode* block = m_background->getChildByTag(*it);
+    if (block)
+    {
+      block->removeFromParentAndCleanup(true);
+    }
+    it++;
+  }
+}
+
 // 初期化
 bool GameScene::init()
 {
@@ -87,6 +198,11 @@ bool GameScene::init()
   {
     return false;
   }
+  
+  // get touch Event
+  setTouchEnabled(true);
+  setTouchMode(kCCTouchesOneByOne);
+  
   // 変数初期化
   initForVariables();
   

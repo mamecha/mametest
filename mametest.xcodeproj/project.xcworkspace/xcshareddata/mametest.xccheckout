@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>B36E4E60-3A6B-4BE1-A5D6-F7678EB8BBB0</string>
+	<key>IDESourceControlProjectName</key>
+	<string>mametest</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>BADFB8F9-12AA-4FE6-9D89-3C14BF8C6E06</key>
+		<string>ssh://github.com/mamecha/mametest.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>mametest.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>BADFB8F9-12AA-4FE6-9D89-3C14BF8C6E06</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>ssh://github.com/mamecha/mametest.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>BADFB8F9-12AA-4FE6-9D89-3C14BF8C6E06</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>BADFB8F9-12AA-4FE6-9D89-3C14BF8C6E06</string>
+			<key>IDESourceControlWCCName</key>
+			<string>mametest</string>
+		</dict>
+	</array>
+</dict>
+</plist>
