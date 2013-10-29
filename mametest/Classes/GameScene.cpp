@@ -84,9 +84,27 @@ bool GameScene::ccTouchBegan(CCTouch* pTouch, CCEvent* pEvent)
 {
   return true;
 }
+// タッチイベント終了
 void GameScene::ccTouchEnded(CCTouch* pTouch, CCEvent* pEvent)
 {
-  CCLog("ccTouchEnded");
+  // タップポイント取得
+  CCPoint touchPoint = m_background->convertToNodeSpace(pTouch);
+  
+  // タップしたコマのTagとコマの種類を取得
+  int tag = 0;
+  kBlock blockType;
+  getTouchBlockTag(touchPoint, tag, blockType);
+  
+  if (tag != 0){
+    // 隣接するコマを検索
+    list<int> sameColorBlockTags = getSameColorBlockTags(tag, blockType);
+    
+    if (sameColorBlockTags.size() > 1)
+    {
+      // 隣接するコマを削除
+      removeBlock(sameColorBlockTags, blockType);
+    }
+  }
 }
 // touch
 void GameScene::getTouchBlockTag(CCPoint touchPoint, int &tag, kBlock &blockType)
@@ -153,6 +171,24 @@ list<int> GameScene::getSameColorBlockTags(int baseTag, kBlock blockType)
     it++;
   }
   return sameColorBlockTags;
+}
+// コマ削除
+void GameScene::removeBlock(list<int> blockTags, kBlock blockType)
+{
+  list<int>::iterator it = blockTags.begin();
+  while (it != blockTags.end())
+  {
+    // 既存配列から該当コマを削除
+    m_blockTags[blockType].remove(*it);
+    
+    // 対象となるコマ取得
+    CCNode* block = m_background->getChildByTag(*it);
+    if (block)
+    {
+      block->removeFromParentAndCleanup(true);
+    }
+    it++;
+  }
 }
 
 // 初期化

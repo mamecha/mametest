@@ -55,8 +55,8 @@ public:
   static cocos2d::CCScene* scene();
   CREATE_FUNC(GameScene);
   
-  virtual bool ccTouchBegan(cocos2d::CCTouch* ptouch, cocos2d::CCEvent* pEvent);
-  virtual void ccTouchEnded(cocos2d::CCTouch* ptouch, cocos2d::CCEvent* pEvent);
+  virtual bool ccTouchBegan(cocos2d::CCTouch* pTouch, cocos2d::CCEvent* pEvent);
+  virtual void ccTouchEnded(cocos2d::CCTouch* pTouch, cocos2d::CCEvent* pEvent);
 };
 
 
