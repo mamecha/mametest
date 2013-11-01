@@ -132,7 +132,7 @@ list<int> GameScene::getSameColorBlockTags(int baseTag, kBlock blockType)
       *it + 1,// up block
       *it - 1, // down block
     };
-    
+    cout << *it << endl;
     for (int i = 0; i < sizeof(tags) / sizeof(tags[0]); i++)
     {
       // 既にリストがあるか検索
@@ -147,6 +147,7 @@ list<int> GameScene::getSameColorBlockTags(int baseTag, kBlock blockType)
     }
     it++;
   }
+  CCLog("end");
   return sameColorBlockTags;
 }
 // コマ削除
