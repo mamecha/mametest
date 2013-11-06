@@ -106,16 +106,17 @@ void GameScene::getTouchBlockTag(CCPoint touchPoint, int &tag, kBlock &blockType
 // コマが配列にあるか検索
 bool GameScene::hasSameColorBlock(list<int> blockTagList, int searchBlockTag)
 {
-  list<int>::iterator it;
-  for (it = blockTagList.begin(); it != blockTagList.end(); ++it)
-  {
-    if (*it == searchBlockTag)
+    list<int>::iterator it;
+    for (it = blockTagList.begin(); it != blockTagList.end(); ++it)
     {
-      return true;
-    }
+      if (*it == searchBlockTag)
+      {
+        return true;
+      }
   }
   return false;
 }
+
 // タップされたコマと同色で勝つ接しているコマの配列を返す
 list<int> GameScene::getSameColorBlockTags(int baseTag, kBlock blockType)
 {
@@ -132,14 +133,13 @@ list<int> GameScene::getSameColorBlockTags(int baseTag, kBlock blockType)
       *it + 1,// up block
       *it - 1, // down block
     };
-    cout << *it << endl;
     for (int i = 0; i < sizeof(tags) / sizeof(tags[0]); i++)
     {
       // 既にリストがあるか検索
       if (!hasSameColorBlock(sameColorBlockTags, tags[i]))
       {
         // コマ配列にあるか
-        if (!hasSameColorBlock(m_blockTags[blockType], tags[i]))
+        if (hasSameColorBlock(m_blockTags[blockType], tags[i]))
         {
           sameColorBlockTags.push_back(tags[i]);
         }
@@ -147,7 +147,6 @@ list<int> GameScene::getSameColorBlockTags(int baseTag, kBlock blockType)
     }
     it++;
   }
-  CCLog("end");
   return sameColorBlockTags;
 }
 // コマ削除
