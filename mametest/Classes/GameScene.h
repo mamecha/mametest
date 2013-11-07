@@ -16,6 +16,8 @@
 #define MAX_BLOCK_Y 8
 
 #define PNG_BACKGROUND "background.png"
+#define MP3_REMOVE_BLOCK "removeBlock.mp3"
+#define REMOVING_TIME 0.1f
 
 class GameScene : public cocos2d::CCLayer
 {
@@ -49,6 +51,9 @@ protected:
   std::list<int> getSameColorBlockTags(int baseTag, kBlock blockType);
   void removeBlock(std::list<int> blockTags, kBlock blockType);
   bool hasSameColorBlock(std::list<int> blockTagList, int searchBlockTag);
+ 
+  // 2-3-1
+  void removingBlock(cocos2d::CCNode* block);
   
 public:
   virtual bool init();

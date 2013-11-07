@@ -9,6 +9,7 @@
 #include "GameScene.h"
 #include "SimpleAudioEngine.h"
 #include "BlockSprite.h"
+#include "CCPlaySE.h"
 
 using namespace cocos2d;
 using namespace CocosDenshion;
@@ -166,6 +167,7 @@ void GameScene::removeBlock(list<int> blockTags, kBlock blockType)
     }
     it++;
   }
+  SimpleAudioEngine::sharedEngine()->playEffect(MP3_REMOVE_BLOCK);
 }
 
 // タッチイベント終了
@@ -211,6 +213,10 @@ bool GameScene::init()
   
   // コマ表示
   showBlock();
+  
+  // 効果音
+  SimpleAudioEngine::sharedEngine()->preloadEffect(MP3_REMOVE_BLOCK);
+  
   
   return true;
 }

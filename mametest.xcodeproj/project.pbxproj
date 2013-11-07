@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		965E560C182BE52F003156F5 /* CCPlaySE.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 965E560A182BE52F003156F5 /* CCPlaySE.cpp */; };
 		F829263117A29C3200927C03 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F829263017A29C3200927C03 /* QuartzCore.framework */; };
 		F829263317A29C3200927C03 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F829263217A29C3200927C03 /* OpenGLES.framework */; };
 		F829263517A29C3200927C03 /* OpenAL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F829263417A29C3200927C03 /* OpenAL.framework */; };
@@ -307,6 +308,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		965E560A182BE52F003156F5 /* CCPlaySE.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CCPlaySE.cpp; sourceTree = "<group>"; };
+		965E560B182BE52F003156F5 /* CCPlaySE.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCPlaySE.h; sourceTree = "<group>"; };
 		F829262D17A29C3200927C03 /* mametest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = mametest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F829263017A29C3200927C03 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		F829263217A29C3200927C03 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
@@ -2173,6 +2176,8 @@
 				F8D22D8017AA88D900194FFC /* BlockSprite.h */,
 				F8D22D7C17AA880000194FFC /* Config.cpp */,
 				F8D22D7D17AA880000194FFC /* Config.h */,
+				965E560A182BE52F003156F5 /* CCPlaySE.cpp */,
+				965E560B182BE52F003156F5 /* CCPlaySE.h */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -2445,6 +2450,7 @@
 				F82928D217A29C3500927C03 /* CCControlButton.cpp in Sources */,
 				F82928D517A29C3500927C03 /* CCControlColourPicker.cpp in Sources */,
 				F82928D917A29C3500927C03 /* CCControlHuePicker.cpp in Sources */,
+				965E560C182BE52F003156F5 /* CCPlaySE.cpp in Sources */,
 				F82928DC17A29C3600927C03 /* CCControlPotentiometer.cpp in Sources */,
 				F82928DF17A29C3600927C03 /* CCControlSaturationBrightnessPicker.cpp in Sources */,
 				F82928E217A29C3600927C03 /* CCControlSlider.cpp in Sources */,
