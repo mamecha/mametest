@@ -55,7 +55,7 @@ void GameScene::showBackground()
 // タグ取得
 int GameScene::getTag(int posIndexX, int posIndexY)
 {
-  return kTagBaseBlock * posIndexX * 100 + posIndexY;
+  return kTagBaseBlock + posIndexX * 100 + posIndexY;
 }
 
 // コマ表示
