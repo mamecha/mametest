@@ -24,6 +24,12 @@ void GameScene::initForVariables()
   // こま一辺の長さを取得
   BlockSprite* pBlock = BlockSprite::createWithBlockType(kBlockRed);
   m_blockSize = pBlock->getContentSize().height;
+  
+  blockTypes.push_back(kBlockRed);
+  blockTypes.push_back(kBlockBlue);
+  blockTypes.push_back(kBlockYellow);
+  blockTypes.push_back(kBlockGreen);
+  blockTypes.push_back(kBlockGray);
 }
 
 // 位置取得
@@ -153,6 +159,8 @@ list<int> GameScene::getSameColorBlockTags(int baseTag, kBlock blockType)
 // コマ削除
 void GameScene::removeBlock(list<int> blockTags, kBlock blockType)
 {
+  bool first = true;
+  
   list<int>::iterator it = blockTags.begin();
   while (it != blockTags.end())
   {
@@ -163,7 +171,31 @@ void GameScene::removeBlock(list<int> blockTags, kBlock blockType)
     CCNode* block = m_background->getChildByTag(*it);
     if (block)
     {
-      block->removeFromParentAndCleanup(true);
+      // コマが消える動作a
+      CCScaleTo* scale = CCScaleTo::create(REMOVING_TIME, 0);
+      
+      // コマ削除の動作
+      CCCallFuncN* func = CCCallFuncN::create(this, callfuncN_selector(GameScene::removingBlock));
+      
+      // アクションをつなげる
+      CCFiniteTimeAction* sequence = CCSequence::create(scale, func, NULL);
+      
+      CCFiniteTimeAction* action;
+      if (first)
+      {
+        // コマが消えるサウンドアクション生成
+        CCPlaySE* playSe = CCPlaySE::create(MP3_REMOVE_BLOCK);
+        // アクションをつなげる
+        action = CCSpawn::create(sequence, playSe, NULL);
+        
+        first = false;
+      }
+      else
+      {
+        action = sequence;
+      }
+      // アクションをセット
+      block->runAction(action);
     }
     it++;
   }
@@ -191,6 +223,19 @@ void GameScene::ccTouchEnded(CCTouch* pTouch, CCEvent* pEvent)
       removeBlock(sameColorBlockTags, blockType);
     }
   }
+}
+// コマ削除
+void GameScene::removingBlock(CCNode* block)
+{
+  block->removeFromParentAndCleanup(true);
+}
+// コマのインデックス取得
+GameScene::PositionIndex GameScene::getPositionIndex(int tag)
+{
+  int pos1_x = (tag - kTagBaseBlock) / 100;
+  int pos1_y = (tag - kTagBaseBlock) % 100;
+  
+  return PositionIndex(pos1_x, pos1_y);
 }
 
 // 初期化
