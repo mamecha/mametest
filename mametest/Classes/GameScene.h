@@ -73,7 +73,15 @@ protected:
   void setNewPosition1(int tag, PositionIndex posIndex);
   void searchNewPosition1(std::list<int> blocks);
   void moveBlock();
-  void movingBlocksanimation1(std::list<int> blocks);
+  void movingBlocksAnimation1(std::list<int> blocks);
+  
+  // 2-3-3
+  bool m_animating;
+  void movedBlocks();
+  std::map<int, bool> getExistsBlockColumn();
+  void searchNewPosition2();
+  void setNewPosition2(int tag, PositionIndex postIndex);
+  void movingBlocksAnimation2();
 public:
   virtual bool init();
   static cocos2d::CCScene* scene();
